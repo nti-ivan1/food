@@ -1,1 +1,165 @@
 /* Denna fil skall innehålla din CSS kod */
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gridWhrapper {
+ display: grid;
+ width: 100vw;
+ height: 100vh;
+ grid-template-areas: 
+   "he he he he"
+   "se se se se"
+   "se se se se"
+   "se se se se"
+   "fo fo fo fo"
+ ;
+
+grid-template-rows: repeat(5 1fr);
+grid-template-columns: repeat(4 1fr);
+grid-gap: 5px;
+}
+
+.header {
+    grid-area: he;
+    background: lightskyblue;
+    text-align:center;
+}
+
+.footer2 {
+    grid-area: fo; 
+    background: lightsteelblue; 
+    text-align:center;
+}
+
+
+
+.innerGrid {
+    grid-area: se;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.innerDiv {
+    background: lightsteelblue;
+    padding: 10px;
+}
+
+h5 {
+    font-size: 25px;
+    font-family: 'Texturina', serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Texturina', serif; 
+}
+
+h1 {
+    font-size: 40px; 
+    font-family: 'Texturina', serif;
+
+}
+
+
+.gridWrapper2 {
+
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "he he he he"
+    "se se se se"
+    "se se se se"
+    "se2 se2 se2 se2"
+    "se2 se2 se2 se2"
+    ;
+    grid-gap: 5px;
+}
+
+.header2 {
+    grid-area: he;
+    background: lightskyblue;
+    text-align:center; 
+    max-height: 150px;
+    margin: 1px;
+}
+
+.innergrid2 {
+    grid-area: se;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+.innergrid3 {
+    grid-area: se2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px; 
+}
+
+.innerdiv2 {
+    background: lightsteelblue
+}
+
+.innerdiv3 {
+    background: lightsteelblue
+}
+
+.h1 {
+    font-size: 40px; 
+}
+
+.p1 {
+    font-size: 20px;
+    text-align:center;
+}
+
+.h5 {
+    font-size: 30px; 
+    text-align:center;
+}
+
+.gridWrapper3 {
+display: grid;
+grid-gap: 5px;
+width: 100vw;
+height: 100vh;
+grid-template-areas: 
+"he he he he"
+"ma ma ma ma"
+"ma ma ma ma"
+"fo fo fo fo"
+"fo fo fo fo"
+;
+}
+
+.header3 {
+    grid-area: he; 
+    background: lightskyblue;
+    text-align: center;
+}
+
+.main {
+    grid-area: ma;
+    background: lightsteelblue;
+    text-align: center;
+}
+
+.footer3 {
+    grid-area: fo;
+    background: lightblue; 
+    text-align: center; 
+}
+
+.h3 {
+    text-align: center;
+}
+
